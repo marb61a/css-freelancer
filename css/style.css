@@ -60,5 +60,32 @@ p {
     text-align: center;
 }
 
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+}
 
+.service {
+    margin-top: 3rem;
+    text-align: center;
+}
 
+.service h2::after {
+    height: .5rem;
+    width: 7rem;
+    background-color: var(--primary);
+    content: '';
+    display: block;
+    margin: 1rem auto 0 auto;
+}
+
+.service i {
+    font-size: 3rem;
+    color: var(--secondary);
+}
+
+.portfolio {
+    display: grid;
+    
+}
