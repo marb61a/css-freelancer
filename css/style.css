@@ -87,5 +87,33 @@ p {
 
 .portfolio {
     display: grid;
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.item:nth-child(3){
+    grid-row-end: span 2; 
+}
+
+.portfolio h3::after {
+    height: .2rem;
+    width: 2rem;
+    background-color: var(--primary);
+    content: '';
+    display: block;
+}
+
+
+.footer {
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    color: var(--light);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
